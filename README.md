@@ -8,6 +8,7 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+  - [Frontend style guide](##front-end style guide)
   - [Built with](#built-with)
 - [Author](#author)
 
@@ -45,9 +46,43 @@ Users should be able to:
 - Semantic HTML5 markup
 - Tailwind CSS
 
-### What I learned
+## Front-end Style Guide
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+### Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+### Colors
+
+### Primary
+
+- Purple 500: hsl(259, 100%, 65%)
+- Red 400: hsl(0, 100%, 67%)
+
+### Neutral
+
+- White: hsl(0, 100%, 100%)
+- Grey 100: hsl(0, 0%, 94%)
+- Grey 200: hsl(0, 0%, 86%)
+- Grey 500: hsl(0, 1%, 44%)
+- Black: hsl(0, 0%, 0%)
+
+### Typography
+
+### Body Copy
+
+- Font size (inputs): 32px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400i, 700, 800i
+
 
 To see how you can add code snippets, see below:
 
