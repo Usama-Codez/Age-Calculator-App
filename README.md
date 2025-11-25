@@ -69,4 +69,4 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Website - [Usama Akram](usamaakram.netlify.app)
+- Website - [Usama Akram](https://usamaakram.netlify.app)
