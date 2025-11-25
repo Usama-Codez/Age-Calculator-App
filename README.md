@@ -9,11 +9,8 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -34,11 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
-
+<img width="1290" height="855" alt="image" src="https://github.com/user-attachments/assets/4cf9c6f7-67e8-4bae-ad82-842d4f1a471b" />
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Click Here for the Solution](https://github.com/Usama-Codez/Age-Calculator-App)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
