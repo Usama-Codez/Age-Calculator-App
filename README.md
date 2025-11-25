@@ -8,7 +8,7 @@
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Frontend style guide](##front-end style guide)
+  - [Frontend style guide](##front-end-style-guide)
   - [Built with](#built-with)
 - [Author](#author)
 
