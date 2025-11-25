@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body
+    class="font-poppins bg-grey-light min-h-screen flex items-center justify-center p-3 sm:p-6"
+  >
+    <main class="w-full max-w-[740px]">
+      <div
+        class="bg-white rounded-2xl rounded-br-[100px] sm:rounded-3xl sm:rounded-br-[150px] lg:rounded-br-[180px] p-6 sm:p-10 lg:p-12 shadow-lg"
+      >
+        <!-- Input Form -->
+        <form id="age-form" class="mb-6 sm:mb-8">
+          <div class="flex gap-2 sm:gap-4 lg:gap-6 mb-12 sm:mb-14 lg:mb-0">
+            <!-- Day Input -->
+            <div class="flex flex-col flex-1 min-w-0 sm:w-28 lg:w-36">
+              <label
+                for="day"
+                id="day-label"
+                class="text-[9px] sm:text-xs lg:text-sm font-bold tracking-[2px] sm:tracking-[3px] lg:tracking-[4px] text-grey-dark mb-1 sm:mb-2 uppercase transition-colors duration-200"
+                >DAY</label
+              >
+              <input
+                type="text"
+                id="day"
+                name="day"
+                placeholder="DD"
+                maxlength="2"
+                aria-label="Day"
+                class="text-lg sm:text-2xl lg:text-[28px] font-bold px-2 sm:px-4 lg:px-5 py-2 sm:py-3 lg:py-3.5 border-2 border-grey-medium rounded-lg outline-none focus:border-purple-primary transition-colors duration-200 cursor-pointer placeholder:text-grey-dark placeholder:opacity-50 w-full"
+              />
+              <span
+                class="error-message text-[9px] sm:text-xs lg:text-sm italic text-red-error mt-1 sm:mt-2 min-h-[16px] sm:min-h-[20px]"
+                id="day-error"
+              ></span>
+            </div>
+
+            <!-- Month Input -->
+            <div class="flex flex-col flex-1 min-w-0 sm:w-28 lg:w-36">
+              <label
+                for="month"
+                id="month-label"
+                class="text-[9px] sm:text-xs lg:text-sm font-bold tracking-[2px] sm:tracking-[3px] lg:tracking-[4px] text-grey-dark mb-1 sm:mb-2 uppercase transition-colors duration-200"
+                >MONTH</label
+              >
+              <input
+                type="text"
+                id="month"
+                name="month"
+                placeholder="MM"
+                maxlength="2"
+                aria-label="Month"
+                class="text-lg sm:text-2xl lg:text-[28px] font-bold px-2 sm:px-4 lg:px-5 py-2 sm:py-3 lg:py-3.5 border-2 border-grey-medium rounded-lg outline-none focus:border-purple-primary transition-colors duration-200 cursor-pointer placeholder:text-grey-dark placeholder:opacity-50 w-full"
+              />
+              <span
+                class="error-message text-[9px] sm:text-xs lg:text-sm italic text-red-error mt-1 sm:mt-2 min-h-[16px] sm:min-h-[20px]"
+                id="month-error"
+              ></span>
+            </div>
+
+            <!-- Year Input -->
+            <div class="flex flex-col flex-1 min-w-0 sm:w-28 lg:w-36">
+              <label
+                for="year"
+                id="year-label"
+                class="text-[9px] sm:text-xs lg:text-sm font-bold tracking-[2px] sm:tracking-[3px] lg:tracking-[4px] text-grey-dark mb-1 sm:mb-2 uppercase transition-colors duration-200"
+                >YEAR</label
+              >
+              <input
+                type="text"
+                id="year"
+                name="year"
+                placeholder="YYYY"
+                maxlength="4"
+                aria-label="Year"
+                class="text-lg sm:text-2xl lg:text-[28px] font-bold px-2 sm:px-4 lg:px-5 py-2 sm:py-3 lg:py-3.5 border-2 border-grey-medium rounded-lg outline-none focus:border-purple-primary transition-colors duration-200 cursor-pointer placeholder:text-grey-dark placeholder:opacity-50 w-full"
+              />
+              <span
+                class="error-message text-[9px] sm:text-xs lg:text-sm italic text-red-error mt-1 sm:mt-2 min-h-[16px] sm:min-h-[20px]"
+                id="year-error"
+              ></span>
+            </div>
+          </div>
+
+          <!-- Submit Section -->
+          <div class="relative flex items-center my-8 sm:my-12 lg:my-14">
+            <hr class="flex-1 border-t-2 border-grey-medium" />
+            <button
+              type="submit"
+              class="absolute left-1/2 -translate-x-1/2 sm:left-auto sm:right-0 sm:translate-x-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-purple-primary hover:bg-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95"
+              aria-label="Calculate age"
+            >
+              <img
+                src="./assets/images/icon-arrow.svg"
+                alt="Submit"
+                class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10"
+              />
+            </button>
+          </div>
+        </form>
+
+        <!-- Results Display -->
+        <div class="space-y-0 -mt-2 sm:-mt-3">
+          <div class="flex items-baseline leading-none">
+            <span
+              class="text-[40px] sm:text-6xl md:text-7xl lg:text-[88px] font-extrabold italic text-purple-primary mr-2 sm:mr-2.5 lg:mr-3"
+              id="years-result"
+              >--</span
+            >
+            <span
+              class="text-[40px] sm:text-6xl md:text-7xl lg:text-[88px] font-extrabold italic text-black"
+              >years</span
+            >
+          </div>
+          <div class="flex items-baseline leading-none">
+            <span
+              class="text-[40px] sm:text-6xl md:text-7xl lg:text-[88px] font-extrabold italic text-purple-primary mr-2 sm:mr-2.5 lg:mr-3"
+              id="months-result"
+              >--</span
+            >
+            <span
+              class="text-[40px] sm:text-6xl md:text-7xl lg:text-[88px] font-extrabold italic text-black"
+              >months</span
+            >
+          </div>
+          <div class="flex items-baseline leading-none">
+            <span
+              class="text-[40px] sm:text-6xl md:text-7xl lg:text-[88px] font-extrabold italic text-purple-primary mr-2 sm:mr-2.5 lg:mr-3"
+              id="days-result"
+              >--</span
+            >
+            <span
+              class="text-[40px] sm:text-6xl md:text-7xl lg:text-[88px] font-extrabold italic text-black"
+              >days</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-[10px] sm:text-xs text-center mt-6 sm:mt-8 text-grey-dark"
+      >
+        Challenge by
+        <a
+          href="https://www.netixsol.com"
+          target="_blank"
+          class="text-purple-primary hover:text-black transition-colors duration-300"
+          >Netixsol</a
+        >. Coded by
+        <a
+          href="https://usamaakram.netlify.app"
+          class="text-purple-primary hover:text-black transition-colors duration-300"
+          >Usama Akram</a
+        >.
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

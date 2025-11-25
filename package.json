@@ -1,0 +1,27 @@
+{
+  "name": "age-calculator-app",
+  "version": "1.0.0",
+  "description": "![Design preview for the Age calculator app coding challenge](preview.jpg)",
+  "main": "script.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify",
+    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Usama-Codez/Age-Calculator-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Usama-Codez/Age-Calculator-App/issues"
+  },
+  "homepage": "https://github.com/Usama-Codez/Age-Calculator-App#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
